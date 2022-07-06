@@ -18,20 +18,63 @@ body {
     font-family: var(--primary-font-family);
 }
 
+
+/* ============= PARTIAL RESET OF STYLES START ============= */
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* ============= PARTIAL RESET OF STYLES END ============= */
+
 /* ============= COMPONENTS ============= */
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+}
 .modal-btn {
+    display: flex;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    
     font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
+
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em; 
     cursor: pointer;
+
     color: var(--secondary-color);
     background: var(--accent-color);
     border-radius: 4px;
+    border: none;
 }
 
 .modal-btn:hover,
@@ -41,6 +84,8 @@ body {
 }
 
 .title {
+    margin-bottom: 50px;
+
     font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 42px;
@@ -49,7 +94,6 @@ body {
     text-align: center;
     color: var(--primary-color);
 }
-
 
 /* ============= /COMPONENTS ============= */
 
@@ -118,12 +162,18 @@ color: #757575;
 }
 
 .hero-title {
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
     font-family: var(--primary-font-family);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--secondary-color)
 }
 
@@ -137,7 +187,14 @@ color: #757575;
     position: absolute;
 }
 
+.benefits-list {
+    display: flex;
+}
+
 .suptitle {
+width: 270px;
+margin-bottom: 10px;
+
 font-family: var(--primary-font-family);
 font-weight: 700;
 font-size: 14px;
@@ -148,6 +205,7 @@ color: var(--primary-color);
 }
 
 .benefits-description {
+    width: 270px;
     font-family: var(--primary-font-family);
     font-weight: 400;
     font-size: 14px;
@@ -157,6 +215,12 @@ color: var(--primary-color);
 }
 
 /* ============= /BENEFITS ============= */
+
+/* ============= WHAT WE DO ============= */
+.proposals {
+    display: flex;
+}
+/* ============= /WHAT WE DO ============= */
 
 /* ============= TEAM ============= */
 
