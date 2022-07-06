@@ -1,0 +1,293 @@
+:root {
+    --primary-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    --secondary-color: #ffffff;
+    --primary-color: #212121;
+    --accent-color: #2196F3;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+body {
+    font-family: var(--primary-font-family);
+}
+
+/* ============= COMPONENTS ============= */
+.modal-btn {
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em; 
+    cursor: pointer;
+    color: var(--secondary-color);
+    background: var(--accent-color);
+    border-radius: 4px;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+.title {
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+/* ============= /COMPONENTS ============= */
+
+/* ============= HEADER ============= */
+.logo-link {
+font-family: var(--secondary-font-family) ;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+text-decoration: none;
+}
+
+.logo-dark {
+    color: var(--primary-color);
+}
+
+.menu-link {
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;    
+    color: var(--primary-color);
+}
+
+.menu-link:hover,
+.menu-link:focus, .menu-link-current {
+    color: var(--accent-color);
+}
+
+.contact-mail {
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+.contact-phone-number {
+font-family: var(--primary-font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+}
+
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+    color: var(--accent-color);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+    color: var(--accent-color);
+}
+/* ============= /HEADER ============= */
+
+/* ============= HERO ============= */
+
+.hero {
+    background: #2F303A;
+}
+
+.hero-title {
+    font-family: var(--primary-font-family);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-color)
+}
+
+/* ============= /HERO ============= */
+
+/* ============= BENEFITS ============= */
+
+.title-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+
+.suptitle {
+font-family: var(--primary-font-family);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-color);
+}
+
+.benefits-description {
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ============= /BENEFITS ============= */
+
+/* ============= TEAM ============= */
+
+.team-title {
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+     color: var(--primary-color);
+}
+
+.team-description {
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ============= /TEAM ============= */
+
+/* ============= FOOTER ============= */
+
+.footer {
+    background: #2F303A;
+}
+
+.logo-white {
+    color: var(--secondary-color);
+}
+
+.address-link {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.mail-link {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.phone-link {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ============= /FOOTER ============= */
+
+/* ============= TABS ============= */
+
+.tabs-btn-selected {
+font-family: var(--primary-font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+cursor: pointer;
+color: var(--secondary-color);
+background: var(--accent-color);
+border-radius: 4px;
+}
+
+.tabs-btn {
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: var(--primary-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.tabs-btn:hover,
+.tabs-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+}
+
+/* ============= /TABS ============= */
+
+/* ============= PORTFOLIO ============= */
+
+.portfolio-card {
+    cursor: pointer;
+}
+
+.portfolio-title {
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-color);
+}
+
+.portfolio-description {
+    font-family: var(--primary-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ============= /PORTFOLIO ============= */
