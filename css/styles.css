@@ -56,10 +56,8 @@ ol {
     margin-right: auto;
 }
 .modal-btn {
-    display: flex;
+    display: inline-block;
     padding: 10px 32px;
-    margin-left: auto;
-    margin-right: auto;
     
     font-family: var(--primary-font-family);
     font-weight: 700;
@@ -158,14 +156,14 @@ color: #757575;
 /* ============= HERO ============= */
 
 .hero {
-    background: #2F303A;
+background: #2F303A;
+text-align: center;
 }
 
 .hero-title {
-    width: 696px;
+    display: block;
+    text-align: center;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
 
     font-family: var(--primary-font-family);
     font-weight: 900;
@@ -173,7 +171,6 @@ color: #757575;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
     color: var(--secondary-color)
 }
 
@@ -189,11 +186,20 @@ color: #757575;
 
 .benefits-list {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits-list-description {
+    width: 270px;
+    margin-right: 30px;
+}
+
+.benefits-list-description:nth-child(2n) {
+    margin-right: 0;
 }
 
 .suptitle {
-width: 270px;
-margin-bottom: 10px;
+padding-bottom: 10px;
 
 font-family: var(--primary-font-family);
 font-weight: 700;
@@ -205,7 +211,6 @@ color: var(--primary-color);
 }
 
 .benefits-description {
-    width: 270px;
     font-family: var(--primary-font-family);
     font-weight: 400;
     font-size: 14px;
