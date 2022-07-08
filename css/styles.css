@@ -4,6 +4,10 @@
     --secondary-color: #ffffff;
     --primary-color: #212121;
     --accent-color: #2196F3;
+
+    /* others */
+    --indent: 30px;
+    --items: 3;
 }
 
 .link {
@@ -17,7 +21,6 @@
 body {
     font-family: var(--primary-font-family);
 }
-
 
 /* ============= PARTIAL RESET OF STYLES START ============= */
 a {
@@ -34,6 +37,9 @@ h6,
 p {
     margin: 0;
 }
+img {
+    display: block;
+}
 
 ul,
 ol {
@@ -41,7 +47,21 @@ ol {
     padding: 0;
     margin: 0;
 }
-/* ============= PARTIAL RESET OF STYLES END ============= */
+/* ============= /PARTIAL RESET OF STYLES END ============= */
+
+/* ============= CARD SET ============= */
+
+ .card-set {
+     display: flex;
+     flex-wrap: wrap;
+     gap: var(--indent);
+ }
+
+ .card-set-item {
+     flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+ }
+
+/* ============= /CARD SET ============= */
 
 /* ============= COMPONENTS ============= */
 
@@ -56,7 +76,9 @@ ol {
     margin-right: auto;
 }
 .modal-btn {
-    display: inline-block;
+    max-width: 400px;
+    min-width: 200px;
+    min-height: 50px;
     padding: 10px 32px;
     
     font-family: var(--primary-font-family);
@@ -96,7 +118,29 @@ ol {
 /* ============= /COMPONENTS ============= */
 
 /* ============= HEADER ============= */
+.header-conteiner {
+display: flex;
+align-items: center;
+}
+
+.header-conteiner-list {
+margin-right: auto;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+ }
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 .logo-link {
+    display: block;
+    margin-right: 93px;
+
 font-family: var(--secondary-font-family) ;
 font-weight: 700;
 font-size: 26px;
@@ -110,7 +154,13 @@ text-decoration: none;
     color: var(--primary-color);
 }
 
+.menu-link, .contact-mail, .contact-phone-number {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .menu-link {
+    display: block;
     font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 14px;
@@ -132,6 +182,12 @@ text-decoration: none;
     letter-spacing: 0.02em;
     color: #757575;
 }
+
+.contacts-list {
+    display: flex;
+    gap: 50px;
+}
+
 
 .contact-phone-number {
 font-family: var(--primary-font-family);
@@ -160,9 +216,16 @@ background: #2F303A;
 text-align: center;
 }
 
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+   align-items: center;
+}
+
 .hero-title {
-    display: block;
-    text-align: center;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
 
     font-family: var(--primary-font-family);
@@ -177,6 +240,11 @@ text-align: center;
 /* ============= /HERO ============= */
 
 /* ============= BENEFITS ============= */
+
+.benefits-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .title-hidden {
     visibility: hidden;
@@ -199,7 +267,7 @@ text-align: center;
 }
 
 .suptitle {
-padding-bottom: 10px;
+margin-bottom: 10px;
 
 font-family: var(--primary-font-family);
 font-weight: 700;
@@ -225,18 +293,50 @@ color: var(--primary-color);
 .proposals {
     display: flex;
 }
+
+.proposal-container {
+    padding-bottom: 94px;
+}
 /* ============= /WHAT WE DO ============= */
 
 /* ============= TEAM ============= */
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-list {
+    --items: 4;
+    display: flex;
+    }
+
+.team-card {
+
+    background-color: var(--secondary-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .team-title {
+    margin-bottom: 10px;
+
     font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-     color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 .team-description {
@@ -257,11 +357,28 @@ color: var(--primary-color);
     background: #2F303A;
 }
 
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-link-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 .logo-white {
     color: var(--secondary-color);
 }
 
+
+.address-title {
+    margin-bottom: 9px;
+}
+
 .address-link {
+display: inline-block;
+
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
@@ -270,6 +387,10 @@ color: var(--primary-color);
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     text-decoration: none;
+}
+
+.mail-title {
+    margin-bottom: 9px;
 }
 
 .mail-link {
@@ -295,36 +416,66 @@ color: var(--primary-color);
 }
 /* ============= /FOOTER ============= */
 
+
+/* ============= PORTFOLIO HEADER ============= */
+.page-header {
+    border-bottom: 1px solid #ECECEC;;
+}
+/* ============= /PORTFOLIO HEADER ============= */
+
 /* ============= TABS ============= */
+.portfolio-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
 
 .tabs-btn-selected {
+align-items: center;
+max-width: 120px;
+min-width: 73px;
+min-height: 38px;
+padding: 6px 22px;
+
 font-family: var(--primary-font-family);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
-display: flex;
-align-items: center;
+
 text-align: center;
 letter-spacing: 0.06em;
 cursor: pointer;
 color: var(--secondary-color);
 background: var(--accent-color);
 border-radius: 4px;
+border: none;
 }
 
 .tabs-btn {
+    align-items: center;
+    text-align: center;
+    max-width: 160px;
+    min-width: 101px;
+    min-height: 38px;
+    padding: 6px 22px;
+
     font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    display: flex;
-    align-items: center;
-    text-align: center;
+   
     letter-spacing: 0.06em;
     cursor: pointer;
     color: var(--primary-color);
     background: #F5F4FA;
     border-radius: 4px;
+    border: none;
 }
 
 .tabs-btn:hover,
@@ -341,7 +492,18 @@ border-radius: 4px;
     cursor: pointer;
 }
 
+.portfolio-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
 .portfolio-title {
+    margin-bottom: 4px;
     font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 18px;
