@@ -109,7 +109,7 @@ ol {
     font-family: var(--primary-font-family);
     font-weight: 700;
     font-size: 42px;
-    line-height: 1.67;
+    line-height: 1.17;
     letter-spacing: 0.05em;
     text-align: center;
     color: var(--primary-color);
@@ -241,7 +241,7 @@ text-align: center;
 
 /* ============= BENEFITS ============= */
 
-.benefits-container {
+.benefits {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -262,7 +262,7 @@ text-align: center;
     margin-right: 30px;
 }
 
-.benefits-list-description:nth-child(2n) {
+.benefits-list-description:last-child {
     margin-right: 0;
 }
 
@@ -292,19 +292,14 @@ color: var(--primary-color);
 /* ============= WHAT WE DO ============= */
 .proposals {
     display: flex;
-}
-
-.proposal-container {
     padding-bottom: 94px;
 }
+
 /* ============= /WHAT WE DO ============= */
 
 /* ============= TEAM ============= */
 .team {
     background-color: #F5F4FA;
-}
-
-.team-container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -355,9 +350,6 @@ color: var(--primary-color);
 
 .footer {
     background: #2F303A;
-}
-
-.footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -372,13 +364,10 @@ color: var(--primary-color);
 }
 
 
-.address-title {
-    margin-bottom: 9px;
-}
-
 .address-link {
-display: inline-block;
-
+    display: inline-block;
+    margin-bottom: 9px;
+  
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
@@ -389,11 +378,10 @@ display: inline-block;
     text-decoration: none;
 }
 
-.mail-title {
-    margin-bottom: 9px;
-}
-
 .mail-link {
+    display: inline-block;
+    margin-bottom: 9px;
+    
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
@@ -405,6 +393,8 @@ display: inline-block;
 }
 
 .phone-link {
+    display: inline-block;
+
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 400;
@@ -424,10 +414,6 @@ display: inline-block;
 /* ============= /PORTFOLIO HEADER ============= */
 
 /* ============= TABS ============= */
-.portfolio-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .tabs {
     display: flex;
@@ -487,6 +473,11 @@ border: none;
 /* ============= /TABS ============= */
 
 /* ============= PORTFOLIO ============= */
+
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .portfolio-card {
     cursor: pointer;
